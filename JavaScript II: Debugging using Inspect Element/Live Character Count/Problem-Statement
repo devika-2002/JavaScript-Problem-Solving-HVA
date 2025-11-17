@@ -1,0 +1,18 @@
+Problem Statement
+You are building a text area that shows a live character counter. As the user types in the text area, the counter below should update to display how many characters have been typed. If the user exceeds the maximum character limit, the counter text should turn red.
+
+Note: Use Inspect Element in your browser to understand how your code is operating.
+
+Your Task
+Create an HTML page that contains:
+A <textarea> element with id textInput and a placeholder:
+Type your message here...
+
+A <p> element below the textarea with id charCount to display the live character count in the format:
+Characters: X / 100
+
+Set a maximum character limit of 100 characters for the textarea.
+Write JavaScript code that performs the following:
+When the user types in the textarea:
+Dynamically update the <p> element to show the current character count.
+If the character count exceeds 100, change the counter text color to red.
