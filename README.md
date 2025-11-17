@@ -1,6 +1,1 @@
 
-Light & Dark Mode Switcher(Project Link) 
-file:///home/navgurukul/Documents/JavaScript-Problem-Solving-HVA/JavaScript%20II:%20Debugging%20using%20Inspect%20Element/Light%20&%20Dark%20Mode%20Switcher/index.html
-
-Live Character Count (Project Link)
-file:///home/navgurukul/Documents/JavaScript-Problem-Solving-HVA/JavaScript%20II:%20Debugging%20using%20Inspect%20Element/Live%20Character%20Count/index.html
