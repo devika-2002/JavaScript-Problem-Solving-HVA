@@ -1,0 +1,19 @@
+Problem Statement
+You are designing a product list page where users can search for items in real time. As the user types in the search box, only the products that match the entered text should remain visible — the rest should be hidden.
+
+Note: Use Inspect Element in your browser to understand how your code is operating.
+
+Your Task
+Create an HTML page that contains:
+A <h2> heading with the text “Product List”.
+An <input> box with id searchBox and a placeholder “Search products...”.
+A <div> container with id productContainer holding multiple <p> elements for different products, for example: “Apple”, “Banana”, “Grapes”, “Mango”, and “Orange”.
+Write JavaScript code that performs the following:
+As the user types in the search box, compare the typed text with each product name.
+Show only the products that include the typed text (case-insensitive) and hide all others.
+
+Note: Ensure the search updates live as the user types, without requiring a button click.
+
+
+Project-Link
+file:///home/navgurukul/Documents/JavaScript-Problem-Solving-HVA/JavaScript%20II:%20Debugging%20using%20Inspect%20Element/Dynamic%20Product%20List%20Filter/index.html

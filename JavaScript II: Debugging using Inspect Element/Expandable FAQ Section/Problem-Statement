@@ -1,0 +1,19 @@
+Problem Statement
+Create an FAQ section where each question can be clicked to show or hide its answer. 
+Both the question and its answer should be displayed as paragraphs, with the answer hidden by default.
+
+Note: Use Inspect Element in your browser to understand how your code is operating.
+
+Your Task
+Create an HTML page that contains:
+A <div> container with id faqSection to hold all FAQs.
+Inside the container, create at least three question-and-answer pairs, each consisting of:
+A <p> element for the question.
+A <p> element for the answer, placed immediately after the question.
+Keep all answer <p> elements hidden by default.
+Write JavaScript code that performs the following:
+When a user clicks on a question, show or hide the corresponding answer paragraph below it. 
+(Hint: You may use nextElementSibling.)
+
+Project link
+file:///home/navgurukul/Documents/JavaScript-Problem-Solving-HVA/JavaScript%20II:%20Debugging%20using%20Inspect%20Element/Expandable%20FAQ%20Section/index.html
