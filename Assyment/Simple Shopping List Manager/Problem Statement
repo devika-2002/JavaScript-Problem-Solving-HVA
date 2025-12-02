@@ -1,0 +1,56 @@
+Problem Statement
+You are creating a simple shopping list. The user can type an item and add it to the list, and 
+each item will appear with a Delete button so it can be removed. The page should also show how many items are currently in the list.
+
+
+
+Your Task
+1. In HTML, create:
+
+An <input> box with the id itemInput where the user can type the item name.
+
+A <button> with the id addBtn labeled Add Item.
+
+A <p> with the id errorMsg for displaying error messages (initially it will be empty).
+
+A <p> with the id itemCount starting with the text Total Items: 0.
+
+A <div> with the id itemList where all items will be shown (initially it will be empty).
+
+
+
+2. In JavaScript:
+
+When the Add Item button is clicked:
+
+Read the text from itemInput.
+
+If the text is empty:
+
+Show an error message in errorMsg - "Please enter an item".
+
+Do not add anything to the list.
+
+If the text is not empty:
+
+Clear any error message from errorMsg.
+
+Clear the text inside itemInput.
+
+Create a new item block that contains:
+
+The item name as text.
+
+A Delete button for that item.
+
+Add this new item block inside itemList.
+
+Update the text in itemCount so it shows the new total number of items.
+
+When a Delete button is clicked:
+
+Remove that item from itemList.
+
+Update the text in itemCount so it matches the current number of items.
+
+

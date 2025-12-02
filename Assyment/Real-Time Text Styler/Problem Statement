@@ -1,0 +1,55 @@
+Problem Statement
+You are building a small writing helper for a notes webpage. The page has a text box where the user can type, 
+and a line of text shown just below it. As the user types, the same text should appear in that line so they 
+can see what it will look like. Next to this line, there are three buttons that change how the text looks: 
+one for text color, one for background color, and one for making the text bigger.
+
+
+
+Your Task
+1. In HTML, create:
+
+A <textarea> with the id textInput where the user can type.
+
+A <p> element with the id displayText where the typed text will be shown.
+
+Three buttons labeled Add Text Color, Add Background Color, and Make Text Bigger with the ids textColorBtn, bgColorBtn, and bigTextBtn.
+
+
+
+2. In JavaScript:
+
+As the user types in the textInput box:
+
+Read the text they typed.
+
+Update the text inside displayText so it always shows the same text.
+
+Use the input event for this.
+
+When the Add Text Color button is clicked:
+
+If the text is in its normal (black) color, change it to blue.
+
+If it is already blue, change it back to black.
+
+Change the button text between Add Text Color and Remove Text Color.
+
+When the Add Background Color button is clicked:
+
+If the text has no background color, make it yellow.
+
+If it is already yellow, remove the background.
+
+Change the button text between Add Background Color and Remove Background Color.
+
+When the Make Text Bigger button is clicked:
+
+If the text is normal size (16px), increase it to 24px.
+
+If it is already 24px, return it to 16px.
+
+Change the button text between Make Text Bigger and Make Text Normal.
+
+Project-Link
+file:///home/navgurukul/Documents/JavaScript-Problem-Solving-HVA/Assyment/Real-Time%20Text%20Styler/index.html

@@ -1,0 +1,38 @@
+Problem Statement
+You are creating a simple mood selector for a wellbeing webpage. The page shows five mood buttons: 
+Happy, Sad, Angry, Tired, and Excited. When the user clicks a button, a message box below should 
+update to match the selected mood, and the page should clearly show which mood is currently chosen.
+
+
+
+Your Task
+1. In HTML, create:
+
+Five buttons labeled Happy, Sad, Angry, Tired, and Excited. Give them the ids happyBtn, sadBtn, angryBtn, tiredBtn, and excitedBtn.
+
+A <p> element with the id moodMessage where the selected mood message will appear.
+
+
+
+2. In JavaScript:
+
+a. When a mood button is clicked:
+
+Update the text inside moodMessage to one of these messages:
+
+Happy → "Great! Keep smiling today!"
+
+Sad → "It's okay to feel down. Take a deep breath."
+
+Angry → "Try stepping away for a moment."
+
+Tired → "Make sure to rest and recharge."
+
+Excited → "Love the energy! Keep it going!"
+
+Remove the highlight from all buttons.
+
+Add the highlight only to the clicked button.
+
+Project-link
+file:///home/navgurukul/Documents/JavaScript-Problem-Solving-HVA/Assyment/Mood%20message%20Selector/index.html
