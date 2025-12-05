@@ -1,30 +1,31 @@
 <html>
     <head>
-        <title>registration form</title>
+        <title>Registration form</title>
     </head>
     <body>
         <form id="registerForm">
+            <label>Name</label>
+            <input type="text" id="nameInput">
+            <p id="nameError"></p>
 
-          <label>Name</label>
-          <input type="text" id="nameInput">
-          <p id="nameError"></p>
+            <label>Email</label>
+            <input type="email" id="emailInput">
+            <p id="emailError"></p>
 
-          <label>Email</label>
-          <input type="text" id="emailInput">
-          <p id="emailError"></p>
+            <label>Password</label>
+            <input type="password" id="passwordInput">
+            <p id="passwordError"></p>
 
-          <label>Password</label>
-          <input type="password" id="passwordInput">
-          <p id="passwordError"></p>
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPasswordInput">
+            <p id="confirmPasswordError"></p>
 
-          <label>Confirm Password</label>
-          <input type="password" id="confirmPasswordInput">
-          <p id="confirmPasswordError"></p>
-
-          <button type="submit">Register</button>
+            <button type="submit">Register</button>
         </form>
-        
+
         <div id="summarySection"></div>
 
+        <script src="script.js"></script>
     </body>
 </html>
+
