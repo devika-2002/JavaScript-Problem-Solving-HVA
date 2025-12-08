@@ -12,54 +12,73 @@ let confirmPasswordError = document.getElementById("confirmPasswordError");
 
 let summarySection = document.getElementById("summarySection");
 
-registerForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    let nameValue = nameInput.value;
-    if (nameValue === "") {
+nameInput.addEventListener("blur", function () {
+    if (nameInput.value === "") {
         nameError.textContent = "Name is required!";
-        return;
+    } else {
+        nameError.textContent = "";
     }
-    nameError.textContent = "";
+});
 
+emailInput.addEventListener("blur", function () {
     let emailValue = emailInput.value;
+
     if (emailValue === "") {
         emailError.textContent = "Email is required!";
-        return;
-    }
-    if (!emailValue.includes("@")) {
+    } else if (!emailValue.includes("@")) {
         emailError.textContent = "Email must contain '@'";
-        return;
+    } else {
+        emailError.textContent = "";
     }
-    emailError.textContent = "";
+});
 
+passwordInput.addEventListener("blur", function () {
     let passwordValue = passwordInput.value;
+
     if (passwordValue === "") {
         passwordError.textContent = "Password is required!";
-        return;
-    }
-    if (passwordValue.length < 6) {
+    } else if (passwordValue.length < 6) {
         passwordError.textContent = "Password must be at least 6 characters!";
-        return;
+    } else {
+        passwordError.textContent = "";
     }
-    passwordError.textContent = "";
+});
 
-    let confirmPasswordValue = confirmPasswordInput.value;
-    if (confirmPasswordValue === "") {
+confirmPasswordInput.addEventListener("blur", function () {
+    let passwordValue = passwordInput.value;
+    let confirmValue = confirmPasswordInput.value;
+
+    if (confirmValue === "") {
         confirmPasswordError.textContent = "Confirm your password!";
-        return;
-    }
-    if (passwordValue !== confirmPasswordValue) {
+    } else if (passwordValue !== confirmValue) {
         confirmPasswordError.textContent = "Passwords do not match!";
+    } else {
+        confirmPasswordError.textContent = "";
+    }
+});
+
+registerForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    nameInput.blur();
+    emailInput.blur();
+    passwordInput.blur();
+    confirmPasswordInput.blur();
+
+    if (
+        nameError.textContent !== "" ||
+        emailError.textContent !== "" ||
+        passwordError.textContent !== "" ||
+        confirmPasswordError.textContent !== ""
+    ) {
         return;
     }
-    confirmPasswordError.textContent = "";
 
     summarySection.innerHTML = `
         <h3>Form Submitted Successfully</h3>
-        <p><strong>Name:</strong> ${nameValue}</p>
-        <p><strong>Email:</strong> ${emailValue}</p>
-        <p><strong>Password:</strong> ${passwordValue}</p>
+        <p><strong>Name:</strong> ${nameInput.value}</p>
+        <p><strong>Email:</strong> ${emailInput.value}</p>
+        <p><strong>Password:</strong> ${passwordInput.value}</p>
     `;
 });
 
