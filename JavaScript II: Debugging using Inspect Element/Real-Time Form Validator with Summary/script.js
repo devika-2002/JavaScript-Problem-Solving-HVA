@@ -45,12 +45,9 @@ passwordInput.addEventListener("blur", function () {
 });
 
 confirmPasswordInput.addEventListener("blur", function () {
-    let passwordValue = passwordInput.value;
-    let confirmValue = confirmPasswordInput.value;
-
-    if (confirmValue === "") {
+    if (confirmPasswordInput.value === "") {
         confirmPasswordError.textContent = "Confirm your password!";
-    } else if (passwordValue !== confirmValue) {
+    } else if (confirmPasswordInput.value !== passwordInput.value) {
         confirmPasswordError.textContent = "Passwords do not match!";
     } else {
         confirmPasswordError.textContent = "";
